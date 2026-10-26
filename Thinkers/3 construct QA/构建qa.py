@@ -23,7 +23,7 @@ os.environ["https_proxy"] = "https://127.0.0.1:7890"
 
 # 在此处填入你的 OpenAI API 密钥
 
-openai.api_key = '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'
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 

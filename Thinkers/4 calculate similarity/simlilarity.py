@@ -15,7 +15,7 @@ import time
 # os.environ["http_proxy"] ="http://127.0.0.1:7890"
 # os.environ["https_proxy"] = "https://127.0.0.1:7890"
 
-openai.api_key = 'xxxxx'
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 prompt = '''
 以下两段文本的问句有较强的相似性，请你帮我把这两个问句和他们的回答分别合并，去除重复含义，保留二者原语义。

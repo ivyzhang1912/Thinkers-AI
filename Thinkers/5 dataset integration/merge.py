@@ -10,7 +10,7 @@ import random
 
 os.environ["http_proxy"] ="http://127.0.0.1:7890"
 os.environ["https_proxy"] = "https://127.0.0.1:7890"
-openai.api_key = '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'
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # 获取path文件夹内的所有文件地址，返回列表
 def read_dir(path):
